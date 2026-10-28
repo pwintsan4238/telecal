@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — {{APP_NAME}}</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <main>
+    <p><a href="/">← {{APP_NAME}}</a></p>
+    <h1>Privacy Policy</h1>
+    <p class="muted">Last updated: October 28, 2026</p>
+
+    <p>{{APP_NAME}} is a Telegram bot that creates Google Calendar meetings and sends emails through Gmail on your request. This policy explains what we collect and why.</p>
+
+    <h2>What we collect</h2>
+    <ul>
+      <li><strong>Telegram chat ID</strong> — to know which account belongs to you.</li>
+      <li><strong>Google OAuth tokens</strong> — to act on your behalf after you connect Google.</li>
+      <li><strong>Time zone</strong> — if you set one with <code>/tz</code>.</li>
+    </ul>
+
+    <h2>What we don't keep</h2>
+    <p>The meeting details and email content you send to the bot are used only to complete that request and are not stored by us. We cannot read your inbox or your existing calendar events.</p>
+
+    <h2>Google permissions</h2>
+    <ul>
+      <li><code>calendar.events</code> — to create meetings you ask for.</li>
+      <li><code>gmail.send</code> — to send emails you ask for.</li>
+    </ul>
+    <p>{{APP_NAME}}'s use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. We do not use Google data for advertising, and we do not sell or share it with anyone.</p>
+
+    <h2>Sharing</h2>
+    <p>Your data is shared only with Telegram and Google, as needed to deliver the service. Nothing is sold.</p>
+
+    <h2>Deleting your data</h2>
+    <p>Send <code>/disconnect</code> to the bot. This revokes Google access and deletes everything we store about you. You can also revoke access at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+
+    <h2>Security</h2>
+    <p>Tokens are stored on our server and transmitted over HTTPS. No system is perfectly secure, but we keep the data we hold to the minimum.</p>
+
+    <h2>Changes</h2>
+    <p>We may update this policy. The date above shows the latest version.</p>
+
+    <h2>Contact</h2>
+    <p><a href="mailto:{{CONTACT_EMAIL}}">{{CONTACT_EMAIL}}</a></p>
+  </main>
+  <footer>
+    <a href="/privacy">Privacy Policy</a>
+    <a href="/terms">Terms of Service</a>
+  </footer>
+</body>
+</html>

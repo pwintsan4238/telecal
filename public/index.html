@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{APP_NAME}}</title>
+  <meta name="description" content="Schedule meetings and send emails from Telegram.">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <main>
+    <h1>{{APP_NAME}}</h1>
+    <p class="muted">Schedule meetings and send emails — right from Telegram.</p>
+    <a class="btn" href="{{BOT_URL}}">Open in Telegram</a>
+
+    <ul class="features">
+      <li><code>/meet Standup | 2026-11-03 14:00 | 30 | a@x.com</code><br><span class="muted">Creates a Google Calendar event with a Meet link and invites guests.</span></li>
+      <li><code>/email a@x.com | Hello | See you tomorrow</code><br><span class="muted">Sends an email from your Gmail.</span></li>
+      <li><code>/disconnect</code><br><span class="muted">Unlinks Google and deletes your data. Any time.</span></li>
+    </ul>
+  </main>
+  <footer>
+    <a href="/privacy">Privacy Policy</a>
+    <a href="/terms">Terms of Service</a>
+  </footer>
+</body>
+</html>

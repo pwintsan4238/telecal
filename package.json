@@ -1,0 +1,19 @@
+{
+  "name": "telecal",
+  "version": "1.0.0",
+  "description": "Minimal Telegram bot to schedule Google Calendar meetings and send Gmail emails.",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "googleapis": "^144.0.0",
+    "telegraf": "^4.16.3"
+  }
+}
